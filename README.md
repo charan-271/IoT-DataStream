@@ -61,8 +61,8 @@ This project provides a ready-to-use stack of containerized services for IoT dat
 
 1. Clone this repository:
 ```powershell
-git clone <repository-url>
-cd iot-stack
+git clone https://github.com/charan/IoT-DataStream.git
+cd IoT-DataStream
 ```
 
 2. Start the stack:
