@@ -1,0 +1,113 @@
+# IoT Stack .gitignore file
+
+# Environment variables and credentials
+.env
+*.env
+.env.local
+.env.development
+.env.test
+.env.production
+secrets.yaml
+*credentials*
+
+# Mosquitto
+mosquitto/log/**
+mosquitto/data/**
+!mosquitto/data/.gitkeep
+!mosquitto/log/.gitkeep
+
+# Node-RED
+nodered/*_cred*.json
+nodered/.sessions/
+nodered/.config.json
+nodered/.config.json.backup
+nodered/.npm/
+nodered/node_modules/
+
+# InfluxDB
+influxdb/data/
+influxdb/meta/
+influxdb/wal/
+
+# Grafana
+grafana/*.db
+grafana/*.db-shm
+grafana/*.db-wal
+grafana/csv/
+grafana/png/
+grafana/pdf/
+grafana/plugins/
+grafana/alerting/
+
+# Portainer
+portainer/*.key
+portainer/*.pub
+portainer/*.db
+portainer/*.bak
+portainer/certs/
+portainer/tls/
+portainer/chisel/
+portainer/compose/
+portainer/docker_config/
+
+# Backup files
+backups/
+*.bak
+*.backup
+*.swp
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Docker specific
+.docker/
+docker.env
+
+# IDE-specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# JavaScript dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Python dependencies
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ESP8266/Arduino
+*.bin
+*.elf
+.pioenvs/
+.piolibdeps/
+.clang_complete
+.gcc-flags.json
+.vscode/.browse.c_cpp.db*
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
